@@ -151,12 +151,64 @@ export default function Contact() {
           margin: 0;
         }
 
+        .social-contact {
+          margin-top: 40px;
+        }
+
+        .social-contact h3 {
+          font-size: 20px;
+          font-weight: 600;
+          color: #1e293b;
+          margin-bottom: 16px;
+        }
+
+        .social-links {
+          display: flex;
+          gap: 12px;
+        }
+
+        .social-link-large {
+          width: 48px;
+          height: 48px;
+          background: #f8fafc;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #64748b;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-size: 20px;
+        }
+
+        .social-link-large:hover {
+          background: #2563eb;
+          color: white;
+          transform: translateY(-2px);
+        }
+
         .contact-form-container {
           background: #ffffff;
           border-radius: 16px;
           padding: 40px;
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
           border: 1px solid #e2e8f0;
+        }
+
+        .form-header {
+          text-align: center;
+          margin-bottom: 32px;
+        }
+
+        .form-header h2 {
+          font-size: 28px;
+          font-weight: 700;
+          color: #1e293b;
+          margin-bottom: 8px;
+        }
+
+        .form-header p {
+          color: #64748b;
         }
 
         .contact-form {
@@ -233,6 +285,10 @@ export default function Contact() {
           background: #9ca3af;
           cursor: not-allowed;
           transform: none;
+        }
+
+        .btn-full {
+          width: 100%;
         }
 
         .form-message {
@@ -316,10 +372,36 @@ export default function Contact() {
                     <p>БЦ "Цифровой", офис 301</p>
                   </div>
                 </div>
+
+                <div className="contact-method">
+                  <div className="method-icon">
+                    <i className="fas fa-clock"></i>
+                  </div>
+                  <div className="method-content">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <p>Сб-Вс: выходной</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="social-contact">
+                <h3>Следите за нами</h3>
+                <div className="social-links">
+                  <a href="#" className="social-link-large"><i className="fab fa-telegram"></i></a>
+                  <a href="#" className="social-link-large"><i className="fab fa-vk"></i></a>
+                  <a href="#" className="social-link-large"><i className="fab fa-github"></i></a>
+                  <a href="#" className="social-link-large"><i className="fab fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
 
             <div className="contact-form-container">
+              <div className="form-header">
+                <h2>Отправить сообщение</h2>
+                <p>Заполните форму, и мы свяжемся с вами в течение 24 часов</p>
+              </div>
+
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-group">
@@ -423,7 +505,7 @@ export default function Contact() {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn" disabled={isSubmitting}>
+                <button type="submit" className="btn btn-full" disabled={isSubmitting}>
                   {isSubmitting ? 'Отправка...' : 'Отправить сообщение'}
                 </button>
 
