@@ -411,7 +411,7 @@ export default function Home() {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Цифровая Трансформация<br>
+              Цифровая Трансформация<br />
               <span className="hero-accent">Вашего Бизнеса</span>
             </h1>
             <p className="hero-subtitle">
