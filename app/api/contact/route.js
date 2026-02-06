@@ -1,22 +1,18 @@
 import axios from 'axios';
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
+export async function POST(request) {
   try {
-    const { name, email, phone, company, service, budget, message } = req.body;
+    const { name, email, phone, company, service, budget, message } = await request.json();
 
     // Basic validation
     if (!name || !email || !message) {
-      return res.status(400).json({ error: 'Name, email and message are required' });
+      return Response.json({ error: 'Name, email and message are required' }, { status: 400 });
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return res.status(400).json({ error: 'Invalid email format' });
+      return Response.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
     // Telegram message
@@ -48,15 +44,15 @@ ${message}
       });
     }
 
-    res.status(200).json({
+    return Response.json({
       success: true,
       message: 'Message sent successfully!'
     });
 
   } catch (error) {
     console.error('Error sending message:', error);
-    res.status(500).json({
+    return Response.json({
       error: 'Failed to send message'
-    });
+    }, { status: 500 });
   }
 }

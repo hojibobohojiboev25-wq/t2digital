@@ -1,18 +1,6 @@
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
-
 export default function Home() {
-  const { t } = useTranslation('common');
-
   return (
     <div>
-      <Head>
-        <title>T.Digital - IT Решения для Вашего Бизнеса</title>
-        <meta name="description" content="T.Digital - профессиональные IT решения, разработка ПО, веб-приложений и цифровых стратегий" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <style jsx global>{`
         * {
           margin: 0;
@@ -177,12 +165,4 @@ export default function Home() {
       </section>
     </div>
   );
-}
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  };
 }
