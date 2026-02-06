@@ -1,18 +1,31 @@
 {
   "name": "t-digital-website",
-  "version": "1.0.0",
-  "description": "Professional IT company website with admin panel and multilingual support",
-  "main": "index.html",
+  "version": "2.0.0",
+  "description": "Professional IT company website built with Next.js, featuring admin panel and multilingual support",
+  "private": true,
   "scripts": {
-    "dev": "node simple-server.js",
-    "build": "echo 'Static site - no build needed'",
-    "start": "node simple-server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": ["website", "it-company", "admin-panel", "multilingual", "vercel"],
-  "author": "T.Digital",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.0"
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "axios": "^1.6.0",
+    "next-i18next": "^13.0.0",
+    "react-i18next": "^12.0.0",
+    "i18next": "^22.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0"
+  },
+  "keywords": ["nextjs", "react", "website", "it-company", "admin-panel", "multilingual"],
+  "author": "T.Digital",
+  "license": "ISC"
 }
