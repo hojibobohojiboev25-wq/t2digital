@@ -37,7 +37,7 @@ export default function Contact() {
       const result = await response.json();
 
       if (response.ok && result.success) {
-        setMessage('Спасибо! Ваше сообщение отправлено.');
+        setMessage('Vielen Dank! Ihre Nachricht wurde gesendet.');
         setFormData({
           name: '',
           email: '',
@@ -48,11 +48,11 @@ export default function Contact() {
           message: ''
         });
       } else {
-        setMessage(result.error || 'Ошибка при отправке сообщения');
+        setMessage(result.error || 'Fehler beim Senden der Nachricht');
       }
     } catch (error) {
       console.error('Error:', error);
-      setMessage('Ошибка при отправке сообщения');
+      setMessage('Fehler beim Senden der Nachricht');
     } finally {
       setIsSubmitting(false);
     }

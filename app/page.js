@@ -107,10 +107,31 @@ export default function Home() {
         /* Hero Section */
         .hero {
           padding: 120px 0 80px;
-          background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+          background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
           min-height: 100vh;
           display: flex;
           align-items: center;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hero::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="50" r="0.5" fill="rgba(255,255,255,0.15)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+          opacity: 0.1;
+          animation: hero-float 20s ease-in-out infinite;
+        }
+
+        @keyframes hero-float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          25% { transform: translateY(-10px) rotate(1deg); }
+          50% { transform: translateY(-20px) rotate(0deg); }
+          75% { transform: translateY(-10px) rotate(-1deg); }
         }
 
         .hero-container {
@@ -167,38 +188,48 @@ export default function Home() {
         .hero-illustration i {
           position: absolute;
           font-size: 60px;
-          color: var(--primary-color);
-          opacity: 0.7;
-          animation: float 6s ease-in-out infinite;
+          color: rgba(255, 255, 255, 0.8);
+          opacity: 0.9;
+          animation: hero-float 8s ease-in-out infinite;
+          filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
         }
 
         .hero-illustration i:nth-child(1) {
-          top: 20%;
-          left: 20%;
+          top: 15%;
+          left: 15%;
           animation-delay: 0s;
         }
 
         .hero-illustration i:nth-child(2) {
-          top: 60%;
-          left: 10%;
+          top: 55%;
+          left: 8%;
           animation-delay: 2s;
         }
 
         .hero-illustration i:nth-child(3) {
-          top: 30%;
-          right: 15%;
+          top: 25%;
+          right: 10%;
           animation-delay: 4s;
         }
 
         .hero-illustration i:nth-child(4) {
-          bottom: 20%;
-          right: 25%;
+          bottom: 15%;
+          right: 20%;
           animation-delay: 1s;
         }
 
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
+        .hero-illustration i:nth-child(5) {
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+          animation-delay: 3s;
+        }
+
+        @keyframes hero-float {
+          0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+          25% { transform: translateY(-25px) rotate(5deg) scale(1.05); }
+          50% { transform: translateY(-30px) rotate(0deg) scale(1.1); }
+          75% { transform: translateY(-25px) rotate(-5deg) scale(1.05); }
         }
 
         /* Services Overview */
@@ -216,29 +247,55 @@ export default function Home() {
         .service-card {
           background: var(--bg-primary);
           padding: 40px 30px;
-          border-radius: 16px;
-          box-shadow: var(--shadow);
+          border-radius: 20px;
+          box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
           text-align: center;
-          transition: all 0.3s ease;
-          border: 1px solid var(--border-color);
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          border: 1px solid rgba(255, 255, 255, 0.8);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .service-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+          transform: scaleX(0);
+          transition: transform 0.4s ease;
         }
 
         .service-card:hover {
-          transform: translateY(-8px);
-          box-shadow: var(--shadow-lg);
+          transform: translateY(-12px) scale(1.02);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-card:hover::before {
+          transform: scaleX(1);
         }
 
         .service-icon {
-          width: 80px;
-          height: 80px;
-          background: var(--primary-light);
+          width: 90px;
+          height: 90px;
+          background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           margin: 0 auto 24px;
-          font-size: 32px;
-          color: var(--primary-color);
+          font-size: 36px;
+          color: white;
+          box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+          transition: all 0.4s ease;
+          position: relative;
+        }
+
+        .service-card:hover .service-icon {
+          transform: scale(1.1) rotate(5deg);
+          box-shadow: 0 12px 35px rgba(37, 99, 235, 0.4);
         }
 
         .service-card h3 {
@@ -313,16 +370,34 @@ export default function Home() {
 
         .portfolio-item {
           background: var(--bg-primary);
-          border-radius: 16px;
+          border-radius: 20px;
           overflow: hidden;
-          box-shadow: var(--shadow);
-          border: 1px solid var(--border-color);
-          transition: all 0.3s ease;
+          box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.8);
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          position: relative;
+        }
+
+        .portfolio-item::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(6, 182, 212, 0.05));
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          z-index: 1;
         }
 
         .portfolio-item:hover {
-          transform: translateY(-8px);
-          box-shadow: var(--shadow-lg);
+          transform: translateY(-12px) scale(1.02);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .portfolio-item:hover::before {
+          opacity: 1;
         }
 
         .project-placeholder {
@@ -343,6 +418,8 @@ export default function Home() {
 
         .portfolio-info {
           padding: 24px;
+          position: relative;
+          z-index: 2;
         }
 
         .portfolio-info h3 {
