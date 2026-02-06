@@ -27,7 +27,7 @@ export default function Footer() {
             color: 'rgba(255, 255, 255, 0.8)',
             lineHeight: '1.6'
           }}>
-            Профессиональные IT-решения для вашего бизнеса
+            Professionelle IT-Lösungen für Ihr Unternehmen
           </p>
           <div style={{
             display: 'flex',
@@ -85,7 +85,7 @@ export default function Footer() {
             marginBottom: '20px',
             color: 'white'
           }}>
-            Услуги
+            Dienstleistungen
           </h4>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li style={{ marginBottom: '12px' }}>
@@ -94,7 +94,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                Веб-разработка
+                Webentwicklung
               </a>
             </li>
             <li style={{ marginBottom: '12px' }}>
@@ -103,7 +103,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                Мобильная разработка
+                Mobile Entwicklung
               </a>
             </li>
             <li style={{ marginBottom: '12px' }}>
@@ -112,7 +112,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                Облачные решения
+                Cloud-Lösungen
               </a>
             </li>
             <li style={{ marginBottom: '12px' }}>
@@ -121,7 +121,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                Кибербезопасность
+                Cybersicherheit
               </a>
             </li>
           </ul>
@@ -133,7 +133,7 @@ export default function Footer() {
             marginBottom: '20px',
             color: 'white'
           }}>
-            Компания
+            Unternehmen
           </h4>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li style={{ marginBottom: '12px' }}>
@@ -142,7 +142,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                О нас
+                Über uns
               </a>
             </li>
             <li style={{ marginBottom: '12px' }}>
@@ -151,7 +151,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                Портфолио
+                Portfolio
               </a>
             </li>
             <li style={{ marginBottom: '12px' }}>
@@ -160,7 +160,7 @@ export default function Footer() {
                 textDecoration: 'none',
                 transition: 'color 0.3s ease'
               }}>
-                Контакты
+                Kontakt
               </a>
             </li>
           </ul>
@@ -172,7 +172,7 @@ export default function Footer() {
             marginBottom: '20px',
             color: 'white'
           }}>
-            Контакты
+            Kontakte
           </h4>
           <p style={{
             color: 'rgba(255, 255, 255, 0.8)',
@@ -195,7 +195,7 @@ export default function Footer() {
             lineHeight: '1.6'
           }}>
             <i className="fas fa-map-marker-alt" style={{ marginRight: '8px' }}></i>
-            Москва, Россия
+            Moskau, Russland
           </p>
         </div>
       </div>
@@ -205,7 +205,7 @@ export default function Footer() {
         textAlign: 'center',
         color: 'rgba(255, 255, 255, 0.6)'
       }}>
-        <p>&copy; 2024 T.Digital. Все права защищены.</p>
+        <p>&copy; 2024 T.Digital. Alle Rechte vorbehalten.</p>
       </div>
     </footer>
   );

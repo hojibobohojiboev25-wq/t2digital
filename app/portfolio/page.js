@@ -4,23 +4,23 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce платформа',
+      title: 'E-Commerce Plattform',
       category: 'web',
-      description: 'Полнофункциональный интернет-магазин',
+      description: 'Vollständige E-Commerce-Plattform',
       technologies: ['React', 'Node.js', 'MongoDB']
     },
     {
       id: 2,
-      title: 'Приложение доставки еды',
+      title: 'Essenslieferservice-App',
       category: 'mobile',
-      description: 'Кроссплатформенное приложение',
+      description: 'Cross-Plattform-App',
       technologies: ['React Native', 'Firebase']
     },
     {
       id: 3,
-      title: 'Корпоративный портал',
+      title: 'Unternehmensportal',
       category: 'web',
-      description: 'Система управления документами',
+      description: 'Dokumentenverwaltungssystem',
       technologies: ['Vue.js', 'Laravel', 'PostgreSQL']
     }
   ];
@@ -147,8 +147,8 @@ export default function Portfolio() {
 
       <section className="page-hero">
         <div className="container">
-          <h1>Наше портфолио</h1>
-          <p>Наши успешные проекты и кейсы</p>
+          <h1>Unser Portfolio</h1>
+          <p>Unsere erfolgreichen Projekte und Fallstudien</p>
         </div>
       </section>
 

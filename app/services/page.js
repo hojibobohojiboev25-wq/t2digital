@@ -5,26 +5,26 @@ export default function Services() {
     {
       id: 'web',
       icon: 'fas fa-code',
-      title: 'Веб-разработка',
-      description: 'Создание современных веб-приложений и сайтов'
+      title: 'Webentwicklung',
+      description: 'Erstellung moderner Webanwendungen und Websites'
     },
     {
       id: 'mobile',
       icon: 'fas fa-mobile-alt',
-      title: 'Мобильная разработка',
-      description: 'Нативные и кроссплатформенные приложения'
+      title: 'Mobile Entwicklung',
+      description: 'Native und Cross-Plattform-Apps'
     },
     {
       id: 'cloud',
       icon: 'fas fa-cloud',
-      title: 'Облачные решения',
-      description: 'Миграция в облако, DevOps и инфраструктура'
+      title: 'Cloud-Lösungen',
+      description: 'Migration in die Cloud, DevOps und Infrastruktur'
     },
     {
       id: 'security',
       icon: 'fas fa-shield-alt',
-      title: 'Кибербезопасность',
-      description: 'Защита данных и информационная безопасность'
+      title: 'Cybersicherheit',
+      description: 'Datenschutz und Informationssicherheit'
     }
   ];
 
@@ -121,8 +121,8 @@ export default function Services() {
 
       <section className="page-hero">
         <div className="container">
-          <h1>Наши Услуги</h1>
-          <p>Комплексные IT-решения для развития вашего бизнеса</p>
+          <h1>Unsere Dienstleistungen</h1>
+          <p>Umfassende IT-Lösungen für die Entwicklung Ihres Geschäfts</p>
         </div>
       </section>
 

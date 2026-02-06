@@ -2,8 +2,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'T.Digital - IT Решения для Вашего Бизнеса',
-  description: 'T.Digital - профессиональные IT решения, разработка ПО, веб-приложений и цифровых стратегий',
+  title: 'T.Digital - Professionelle IT-Lösungen für Ihr Unternehmen',
+  description: 'T.Digital - professionelle IT-Lösungen, Softwareentwicklung, Webanwendungen und digitale Strategien',
 };
 
 export default function RootLayout({ children }) {

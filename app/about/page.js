@@ -89,8 +89,8 @@ export default function About() {
 
       <section className="page-hero">
         <div className="container">
-          <h1>О компании</h1>
-          <p>Профессиональная команда разработчиков с многолетним опытом</p>
+          <h1>Über uns</h1>
+          <p>Professionelles Entwicklerteam mit langjähriger Erfahrung</p>
         </div>
       </section>
 
@@ -98,9 +98,9 @@ export default function About() {
         <div className="container">
           <div className="story-content">
             <div className="story-text">
-              <h2>Наша история</h2>
+              <h2>Unsere Geschichte</h2>
               <p>
-                Компания T.Digital была основана в 2019 году группой энтузиастов IT-технологий... Мы верим, что правильное применение IT может кардинально изменить бизнес-процессы и открыть новые возможности для роста и развития.
+                T.Digital wurde 2019 von einer Gruppe von IT-Technologie-Enthusiasten gegründet... Wir glauben, dass die richtige Anwendung von IT Geschäftsprozesse grundlegend verändern und neue Möglichkeiten für Wachstum und Entwicklung eröffnen kann.
               </p>
             </div>
             <div className="story-image">

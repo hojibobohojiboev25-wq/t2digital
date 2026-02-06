@@ -410,18 +410,18 @@ export default function Home() {
       <section id="home" className="hero">
         <div className="hero-container">
           <div className="hero-content">
-            <h1 className="hero-title">
-              Цифровая Трансформация<br />
-              <span className="hero-accent">Вашего Бизнеса</span>
-            </h1>
-            <p className="hero-subtitle">
-              Профессиональные IT-решения для компаний любого масштаба.
-              Разработка ПО, веб-приложений и цифровых стратегий.
-            </p>
-            <div className="hero-buttons">
-              <a href="/services" className="btn btn-primary">Наши услуги</a>
-              <a href="/contact" className="btn btn-secondary">Связаться с нами</a>
-            </div>
+          <h1 className="hero-title">
+            Digitale Transformation<br />
+            <span className="hero-accent">Ihres Geschäfts</span>
+          </h1>
+          <p className="hero-subtitle">
+            Professionelle IT-Lösungen für Unternehmen jeder Größe.
+            Softwareentwicklung, Webanwendungen und digitale Strategien.
+          </p>
+          <div className="hero-buttons">
+            <a href="/services" className="btn btn-primary">Unsere Dienstleistungen</a>
+            <a href="/contact" className="btn btn-secondary">Kontaktieren Sie uns</a>
+          </div>
           </div>
           <div className="hero-image">
             <div className="hero-illustration">
@@ -438,37 +438,37 @@ export default function Home() {
       <section className="services-overview">
         <div className="container">
           <div className="section-header">
-            <h2>Наши Услуги</h2>
-            <p>Комплексные IT-решения для развития вашего бизнеса</p>
+            <h2>Unsere Dienstleistungen</h2>
+            <p>Umfassende IT-Lösungen für die Entwicklung Ihres Geschäfts</p>
           </div>
           <div className="services-grid">
             <div className="service-card">
               <div className="service-icon">
                 <i className="fas fa-code"></i>
               </div>
-              <h3>Веб-разработка</h3>
-              <p>Создание современных веб-приложений и сайтов с использованием передовых технологий</p>
+              <h3>Webentwicklung</h3>
+              <p>Erstellung moderner Webanwendungen und Websites mit fortschrittlichen Technologien</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
                 <i className="fas fa-mobile-alt"></i>
               </div>
-              <h3>Мобильная разработка</h3>
-              <p>Нативные и кроссплатформенные мобильные приложения для iOS и Android</p>
+              <h3>Mobile Entwicklung</h3>
+              <p>Native und Cross-Plattform-Mobile-Apps für iOS und Android</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
                 <i className="fas fa-cloud"></i>
               </div>
-              <h3>Облачные решения</h3>
-              <p>Миграция в облако, DevOps и инфраструктурные решения</p>
+              <h3>Cloud-Lösungen</h3>
+              <p>Migration in die Cloud, DevOps und Infrastrukturlösungen</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
                 <i className="fas fa-shield-alt"></i>
               </div>
-              <h3>Кибербезопасность</h3>
-              <p>Защита данных и информационная безопасность вашего бизнеса</p>
+              <h3>Cybersicherheit</h3>
+              <p>Datenschutz und Informationssicherheit Ihres Unternehmens</p>
             </div>
           </div>
         </div>
@@ -479,15 +479,15 @@ export default function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Наша история</h2>
+              <h2>Unsere Geschichte</h2>
               <p>
-                Компания T.Digital была основана в 2019 году группой энтузиастов IT-технологий... Мы верим, что правильное применение IT может кардинально изменить бизнес-процессы и открыть новые возможности для роста и развития.
+                T.Digital wurde 2019 von einer Gruppe von IT-Technologie-Enthusiasten gegründet... Wir glauben, dass die richtige Anwendung von IT Geschäftsprozesse grundlegend verändern und neue Möglichkeiten für Wachstum und Entwicklung eröffnen kann.
               </p>
             </div>
             <div className="about-image">
               <div className="story-placeholder">
                 <i className="fas fa-building"></i>
-                <p>Офис T.Digital</p>
+                <p>Büro T.Digital</p>
               </div>
             </div>
           </div>
@@ -498,39 +498,39 @@ export default function Home() {
       <section className="portfolio-section">
         <div className="container">
           <div className="section-header">
-            <h2>Наше портфолио</h2>
-            <p>Наши успешные проекты и кейсы</p>
+            <h2>Unser Portfolio</h2>
+            <p>Unsere erfolgreichen Projekte und Fallstudien</p>
           </div>
 
           <div className="portfolio-grid">
             <div className="portfolio-item">
               <div className="project-placeholder">
                 <i className="fas fa-shopping-cart"></i>
-                <p>E-commerce платформа</p>
+                <p>E-Commerce Plattform</p>
               </div>
               <div className="portfolio-info">
-                <h3>E-commerce платформа</h3>
-                <p>Полнофункциональный интернет-магазин с интеграцией платежных систем</p>
+                <h3>E-Commerce Plattform</h3>
+                <p>Vollständige E-Commerce-Plattform mit Zahlungssystem-Integration</p>
               </div>
             </div>
             <div className="portfolio-item">
               <div className="project-placeholder">
                 <i className="fas fa-mobile-screen-button"></i>
-                <p>Мобильное приложение</p>
+                <p>Mobile App</p>
               </div>
               <div className="portfolio-info">
-                <h3>Приложение доставки еды</h3>
-                <p>Кроссплатформенное приложение с геолокацией</p>
+                <h3>Essenslieferservice-App</h3>
+                <p>Cross-Plattform-App für Essensbestellung mit Geolocation</p>
               </div>
             </div>
             <div className="portfolio-item">
               <div className="project-placeholder">
                 <i className="fas fa-building"></i>
-                <p>Корпоративный портал</p>
+                <p>Unternehmensportal</p>
               </div>
               <div className="portfolio-info">
-                <h3>Корпоративный портал</h3>
-                <p>Система управления документами</p>
+                <h3>Unternehmensportal</h3>
+                <p>Dokumentenverwaltungssystem für große Unternehmen</p>
               </div>
             </div>
           </div>

@@ -31,11 +31,11 @@ export default function Navigation() {
         </div>
 
         <div className={`nav-menu ${isMobileMenuOpen ? 'mobile-menu' : ''}`}>
-          <a href="/" className="nav-link active">Главная</a>
-          <a href="/about" className="nav-link">О компании</a>
-          <a href="/services" className="nav-link">Услуги</a>
-          <a href="/portfolio" className="nav-link">Портфолио</a>
-          <a href="/contact" className="nav-link">Контакты</a>
+            <a href="/" className="nav-link active">Startseite</a>
+            <a href="/about" className="nav-link">Über uns</a>
+            <a href="/services" className="nav-link">Dienstleistungen</a>
+            <a href="/portfolio" className="nav-link">Portfolio</a>
+            <a href="/contact" className="nav-link">Kontakt</a>
         </div>
 
         <div className="nav-toggle" onClick={toggleMobileMenu}>

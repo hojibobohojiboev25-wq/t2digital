@@ -327,8 +327,8 @@ export default function Contact() {
 
       <section className="page-hero">
         <div className="container">
-          <h1>Свяжитесь с нами</h1>
-          <p>Обсудим ваш проект и найдем оптимальное решение</p>
+          <h1>Kontaktieren Sie uns</h1>
+          <p>Lassen Sie uns Ihr Projekt besprechen und die beste Lösung finden</p>
         </div>
       </section>
 
@@ -336,8 +336,8 @@ export default function Contact() {
         <div className="container">
           <div className="contact-content">
             <div className="contact-info">
-              <h2>Давайте поговорим о вашем проекте</h2>
-              <p>Готовы обсудить идеи и найти лучшие решения для вашего бизнеса.</p>
+              <h2>Lassen Sie uns über Ihr Projekt sprechen</h2>
+              <p>Wir sind bereit, Ideen zu besprechen und die besten Lösungen für Ihr Unternehmen zu finden.</p>
 
               <div className="contact-methods">
                 <div className="contact-method">
@@ -345,7 +345,7 @@ export default function Contact() {
                     <i className="fas fa-phone"></i>
                   </div>
                   <div className="method-content">
-                    <h3>Телефон</h3>
+                    <h3>Telefon</h3>
                     <p>+7 (495) 123-45-67</p>
                     <p>+7 (800) 555-01-23</p>
                   </div>
@@ -356,7 +356,7 @@ export default function Contact() {
                     <i className="fas fa-envelope"></i>
                   </div>
                   <div className="method-content">
-                    <h3>Email</h3>
+                    <h3>E-Mail</h3>
                     <p>info@t.digital</p>
                     <p>projects@t.digital</p>
                   </div>
@@ -367,9 +367,9 @@ export default function Contact() {
                     <i className="fas fa-map-marker-alt"></i>
                   </div>
                   <div className="method-content">
-                    <h3>Адрес</h3>
-                    <p>Москва, ул. Технологическая, д. 15</p>
-                    <p>БЦ "Цифровой", офис 301</p>
+                    <h3>Adresse</h3>
+                    <p>Moskau, Technologieweg 15</p>
+                    <p>Digital Business Center, Büro 301</p>
                   </div>
                 </div>
 
@@ -378,15 +378,15 @@ export default function Contact() {
                     <i className="fas fa-clock"></i>
                   </div>
                   <div className="method-content">
-                    <h3>Режим работы</h3>
-                    <p>Пн-Пт: 9:00 - 18:00</p>
-                    <p>Сб-Вс: выходной</p>
+                    <h3>Arbeitszeiten</h3>
+                    <p>Mo-Fr: 9:00 - 18:00</p>
+                    <p>Sa-So: Geschlossen</p>
                   </div>
                 </div>
               </div>
 
               <div className="social-contact">
-                <h3>Следите за нами</h3>
+                <h3>Folgen Sie uns</h3>
                 <div className="social-links">
                   <a href="#" className="social-link-large"><i className="fab fa-telegram"></i></a>
                   <a href="#" className="social-link-large"><i className="fab fa-vk"></i></a>
@@ -398,14 +398,14 @@ export default function Contact() {
 
             <div className="contact-form-container">
               <div className="form-header">
-                <h2>Отправить сообщение</h2>
-                <p>Заполните форму, и мы свяжемся с вами в течение 24 часов</p>
+                <h2>Nachricht senden</h2>
+                <p>Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen</p>
               </div>
 
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-group">
-                    <label className="form-label" htmlFor="name">Имя *</label>
+                    <label className="form-label" htmlFor="name">Name *</label>
                     <input
                       type="text"
                       id="name"
@@ -417,7 +417,7 @@ export default function Contact() {
                     />
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="email">Email *</label>
+                    <label className="form-label" htmlFor="email">E-Mail *</label>
                     <input
                       type="email"
                       id="email"
@@ -432,7 +432,7 @@ export default function Contact() {
 
                 <div className="form-row">
                   <div className="form-group">
-                    <label className="form-label" htmlFor="phone">Телефон</label>
+                    <label className="form-label" htmlFor="phone">Telefon</label>
                     <input
                       type="tel"
                       id="phone"
@@ -443,7 +443,7 @@ export default function Contact() {
                     />
                   </div>
                   <div className="form-group">
-                    <label className="form-label" htmlFor="company">Компания</label>
+                    <label className="form-label" htmlFor="company">Unternehmen</label>
                     <input
                       type="text"
                       id="company"
@@ -456,7 +456,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="service">Интересующая услуга</label>
+                  <label className="form-label" htmlFor="service">Gewünschter Service</label>
                   <select
                     id="service"
                     name="service"
@@ -464,18 +464,18 @@ export default function Contact() {
                     value={formData.service}
                     onChange={handleChange}
                   >
-                    <option value="">Выберите услугу</option>
-                    <option value="web">Веб-разработка</option>
-                    <option value="mobile">Мобильная разработка</option>
-                    <option value="cloud">Облачные решения</option>
-                    <option value="security">Кибербезопасность</option>
-                    <option value="consulting">Консультации</option>
-                    <option value="other">Другое</option>
+                    <option value="">Service auswählen</option>
+                    <option value="web">Webentwicklung</option>
+                    <option value="mobile">Mobile Entwicklung</option>
+                    <option value="cloud">Cloud-Lösungen</option>
+                    <option value="security">Cybersicherheit</option>
+                    <option value="consulting">Beratung</option>
+                    <option value="other">Sonstiges</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="budget">Бюджет проекта</label>
+                  <label className="form-label" htmlFor="budget">Projektbudget</label>
                   <select
                     id="budget"
                     name="budget"
@@ -483,16 +483,16 @@ export default function Contact() {
                     value={formData.budget}
                     onChange={handleChange}
                   >
-                    <option value="">Выберите диапазон</option>
-                    <option value="small">До 300 000 ₽</option>
-                    <option value="medium">300 000 - 1 000 000 ₽</option>
-                    <option value="large">1 000 000 - 3 000 000 ₽</option>
-                    <option value="enterprise">Более 3 000 000 ₽</option>
+                    <option value="">Budget auswählen</option>
+                    <option value="small">Bis 300.000 €</option>
+                    <option value="medium">300.000 - 1.000.000 €</option>
+                    <option value="large">1.000.000 - 3.000.000 €</option>
+                    <option value="enterprise">Über 3.000.000 €</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label" htmlFor="message">Сообщение *</label>
+                  <label className="form-label" htmlFor="message">Nachricht *</label>
                   <textarea
                     id="message"
                     name="message"
@@ -501,12 +501,12 @@ export default function Contact() {
                     onChange={handleChange}
                     rows="5"
                     required
-                    placeholder="Опишите ваш проект или задачу..."
+                    placeholder="Beschreiben Sie Ihr Projekt oder Ihre Aufgabe..."
                   ></textarea>
                 </div>
 
                 <button type="submit" className="btn btn-full" disabled={isSubmitting}>
-                  {isSubmitting ? 'Отправка...' : 'Отправить сообщение'}
+                  {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
                 </button>
 
                 {message && (
